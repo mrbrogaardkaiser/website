@@ -17,38 +17,94 @@
       crossorigin="anonymous"
     ></script>
     <script type="module" src="index.js"></script>
+    <style>
+      .flexbox-container{
+        display: flex;
+
+      }
+    </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container">
       <button
+        class="navbar-toggler"
         type="button"
         data-bs-toggle="collapse"
         data-target="#navbarNav"
-        class="navbar-toggler"
         aria-controls="navbarNav"
         aria-expanded="false"
-        aria-label="toggle navivation"
-      ></button>
+        aria-label="Toggle navigation"
+      >
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a href="#" class="nav-link active">Home</a>
+
+        <ul class="navbar-nav mx-auto" id="navbar">
+
+          <li class="nav-item">
+
+            <a id="home-page" aria-current="page"
+            
+            href="#" class="nav-link">Forside</a>
           </li>
-          <li class="nav-item active">
-            <a href="#" class="nav-link active">Experience</a>
+          <li class="nav-item">
+            <a id="exp-page" href="#" class="nav-link">Erfaring</a>
           </li>
-          <li class="nav-item active">
-            <a href="#" class="nav-link active">Education</a>
+          <li class="nav-item ">
+            <a id="edu-page"href="#" class="nav-link">Uddannelse</a>
           </li>
-          <li class="nav-item active">
-            <a href="#" class="nav-link active">Profile</a>
+          <li class="nav-item">
+            <a id="profile-page" href="#" class="nav-link">Profil</a>
           </li>
-          <li class="nav-item active">
-            <a href="#" class="nav-link active">Contact</a>
+          <li class="nav-item">
+            <a id="contact-page" href="#" class="nav-link">Kontakt</a>
           </li>
         </ul>
       </div>
+    </div>
     </nav>
+      <div id="content"></div>
   </body>
 </html>
+
+
+<!--
+  Home page
+-->
+
+<template data-id="home-page">
+  <div class="flexbox-container">
+    <div class="flexbox-item item-1">
+      <h1>Lars Brogaard Kaiser</h1>
+    <hr>
+  <h1>IT-studerende</h1>
+
+
+    </div>
+    
+
+
+
+  </div>
+  
+  
+</template>
+
+<template data-id="exp-page">
+  <h1>Profesional Experience</h1>
+</template>
+
+<template data-id="edu-page">
+  <h1>Education</h1>
+</template>
+
+<template data-id="profile-page">
+  <h1>Professional profile</h1>
+</template>
+
+<template data-id="contact-page">
+  <h1>Contact information</h1>
+</template>
