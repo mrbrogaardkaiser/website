@@ -17,14 +17,33 @@
       crossorigin="anonymous"
     ></script>
     <script type="module" src="index.js"></script>
+
+
     <style>
       .flexbox-container{
         display: flex;
-
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        
       }
+      .flexbox-item {
+        width: 600px;
+        height: 400px;
+        margin: 10px;
+        padding: 30px;
+        
+      }
+
+
+
     </style>
   </head>
-  <body>
+  <body style="height: 600px;">
+
+    <!--
+      Nav bar
+    -->
     
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
       <div class="container">
@@ -67,6 +86,19 @@
     </div>
     </nav>
       <div id="content"></div>
+
+<!--
+  Footer
+-->
+
+<footer class="footer">
+  <div class="container">
+    <span class="text-muted">2022 Lars Brogaard Kaiser</span>
+  </div>
+</footer>
+
+
+
   </body>
 </html>
 
@@ -77,17 +109,11 @@
 
 <template data-id="home-page">
   <div class="flexbox-container">
-    <div class="flexbox-item item-1">
+    <div class="flexbox-item">
       <h1>Lars Brogaard Kaiser</h1>
     <hr>
   <h1>IT-studerende</h1>
-
-
     </div>
-    
-
-
-
   </div>
   
   
